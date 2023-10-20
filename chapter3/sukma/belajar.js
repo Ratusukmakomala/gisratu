@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const PointTable = document.getElementById("pointTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/Ratusukmakomala/gisratu/main/chapter3/point.json") // Ganti "point.json" dengan nama file JSON Anda
+    fetch("https://raw.githubusercontent.com/Ratusukmakomala/gisratu/chapter3/point.json") // Ganti "point.json" dengan nama file JSON Anda
         .then(response => response.json())
         .then(data => {
             let rowNum = 1; // Nomor urut awal
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const PointTable = document.getElementById("polygonTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/Ratusukmakomala/gisratu/main/chapter3/polygon.json") // Ganti "point.json" dengan nama file JSON Anda
+    fetch("https://raw.githubusercontent.com/Ratusukmakomala/gisratu/chapter3/polygon.json") // Ganti "point.json" dengan nama file JSON Anda
         .then(response => response.json())
         .then(data => {
             let rowNum = 1; // Nomor urut awal
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const PointTable = document.getElementById("linestringTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/Ratusukmakomala/gisratu/main/chapter3/linestring.json") // Ganti "point.json" dengan nama file JSON Anda
+    fetch("https://raw.githubusercontent.com/Ratusukmakomala/gisratu/chapter3/linestring.json") // Ganti "point.json" dengan nama file JSON Anda
         .then(response => response.json())
         .then(data => {
             let rowNum = 1; // Nomor urut awal
@@ -96,17 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mendownload data drawpoint, line string, dan polyline
     const drawpointSource = new ol.source.Vector({
-        url: 'https://raw.githubusercontent.com/Ratusukmakomala/gisratu/main/chapter3/point.json',
+        url: 'https://raw.githubusercontent.com/Ratusukmakomala/gisratu/chapter3/point.json',
         format: new ol.format.GeoJSON()
     });
 
     const lineStringSource = new ol.source.Vector({
-        url: 'https://raw.githubusercontent.com/Ratusukmakomala/gisratu/main/chapter3/linestring.json',
+        url: 'https://raw.githubusercontent.com/Ratusukmakomala/gisratu/chapter3/linestring.json',
         format: new ol.format.GeoJSON()
     });
 
     const polylineSource = new ol.source.Vector({
-        url: 'https://raw.githubusercontent.com/Ratusukmakomala/gisratu/main/chapter3/polygon.json',
+        url: 'https://raw.githubusercontent.com/Ratusukmakomala/gisratu/chapter3/polygon.json',
         format: new ol.format.GeoJSON()
     });
 
