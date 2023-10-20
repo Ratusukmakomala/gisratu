@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const PointTable = document.getElementById("pointTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/Ratusukmakomala/ratu/main/point.json") // Ganti "point.json" dengan nama file JSON Anda
+    fetch("https://raw.githubusercontent.com/Ratusukmakomala/gisratu/chapter3/sukma/point.json") // Ganti "point.json" dengan nama file JSON Anda
         .then(response => response.json())
         .then(data => {
             let rowNum = 1; // Nomor urut awal
